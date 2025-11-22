@@ -168,7 +168,7 @@ export default defineConfig({
     },
   },
 
-  cleanUrls: true,
+  cleanUrls: false,
   appearance: true,
   lastUpdated: true
 })
