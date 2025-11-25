@@ -23,37 +23,37 @@
 
 第一步：点击浏览器右上角三个点 
 
-![pic1](/images/docs/public/images/Chapter3/3-1/311.png) 
+![pic1](/images/Chapter3/3-1/311.png) 
 
 第二步：点击设置
 
-![pic2](/images/docs/public/images/Chapter3/3-1/312.png)  
+![pic2](/images/Chapter3/3-1/312.png)  
 
 第三步：如果有，点击左上角三条杠（若没有请略过这一步）
 
-![pic3](/images/docs/public/images/Chapter3/3-1/313.png)  
+![pic3](/images/Chapter3/3-1/313.png)  
 
 第四步：点击”隐私，搜索与服务“按钮
 
-![pic4](/images/docs/public/images/Chapter3/3-1/314.png)  
+![pic4](/images/Chapter3/3-1/314.png)  
 
 第五步：下拉，找到cookie按钮并点击
 
-![pic5](/images/docs/public/images/Chapter3/3-1/315.png)  
+![pic5](/images/Chapter3/3-1/315.png)  
 
 第六步：点击查看“所有cookie和站点数据”按钮
 
-![pic6](/images/docs/public/images/Chapter3/3-1/316.png)  
+![pic6](/images/Chapter3/3-1/316.png)  
 
 第七步：点击“全部删除”按钮即可退出全部网站的登录
 
-![pic7](/images/docs/public/images/Chapter3/3-1/317.png)
+![pic7](/images/Chapter3/3-1/317.png)
 
 ####  2.删除即时通讯软件和其他可能泄露隐私的程序并重新安装或彻底删除 
 
 删除qq，微信以及你曾经安装过的程序的时候，切记在卸载时点击删除全部信息（如果有）否则直接删除可能会对您或其他使用过这些程序的人的隐私造成泄露。
 
-![pic8](/images/docs/public/images/Chapter3/3-1/318.png)  
+![pic8](/images/Chapter3/3-1/318.png)  
 
 如果您不知道如何删除应用，请参考如下链接内的文章中的操作方法来删除计算机内安装的应用。
 
