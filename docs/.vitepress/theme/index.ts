@@ -14,8 +14,6 @@ import busuanzi from 'busuanzi.pure.js'
 import './style.css'
 import './style/index.css'
 import '@fortawesome/fontawesome-free/css/all.min.css'
-import { NProgress } from 'nprogress-v2/dist/index.js' // 进度条组件
-import 'nprogress-v2/dist/index.css' // 进度条样式
 
 export default {
   extends: DefaultTheme,
@@ -29,13 +27,8 @@ export default {
     app.component('Tags' , Tags);
 
     if (inBrowser) {
-      NProgress.configure({ showSpinner: false })
-      router.onBeforeRouteChange = () => {
-        NProgress.start() // 开始进度条
-      }
       router.onAfterRouteChanged = () => {
         busuanzi.fetch()
-        NProgress.done()
       }
     }
   },
