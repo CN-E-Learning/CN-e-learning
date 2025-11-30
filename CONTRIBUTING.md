@@ -61,8 +61,13 @@
   ```
 
 ## 📤 提交方式
+
+### 注意！根据之后的项目规划，在贡献文章的同时请将.md文件一并提交在[此处](https://smartteachcn.feishu.cn/share/base/form/shrcnXEF4ppmdMtZ4jkgBp9XgHd)。感谢配合！
+
 ### 方式1：直接提交 PR（Pull Request）
+
 1. **Fork 仓库**：访问 [CN-e-learning 仓库](https://github.com/CN-E-Learning/CN-e-learning)，点击右上角「Fork」复刻到个人仓库。
+
 2. **在线修改或本地修改**
    > 根据目前的项目规划，同学们**仅可以**在 `/docs/faq` 中贡献内容。如果您认为 `/docs/guide` 中的文件需要修改请提交 [Issue](https://github.com/CN-E-Learning/CN-e-learning/issues) 等待处理。
 
@@ -70,8 +75,13 @@
    - 提交在线/本地修改并推送至个人仓库。
    - 进入个人仓库页面，点击「Compare & pull request」，填写 PR 标题和简要说明并提交。
 
+4. **提交在问卷中**
+   - 填写[此问卷](https://smartteachcn.feishu.cn/share/base/form/shrcnXEF4ppmdMtZ4jkgBp9XgHd)。
+   
 ### 方式2：提交 Issue
+
 1. **选择模板**：访问仓库「Issues」页面，点击「New issue」，选择「内容贡献」模板。
+
 2. **填写信息**：请按照模板要求进行填写。
 
 
