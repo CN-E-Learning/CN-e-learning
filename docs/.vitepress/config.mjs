@@ -39,13 +39,7 @@ export default defineConfig({
   themeConfig: {
     logo: '/logo.png',
     nav: [
-      { text: '<i class="fa-solid fa-tags"></i> 标签', link: '/tags' },
-      { text: '<i class="fa-solid fa-book"></i> 指南', link: '/guide/index.md' },
-      { text: '<i class="fa-solid fa-question-circle"></i> 常见问题', link: '/faq/the-soft-keyboard-cannot-type' },
-      { text: '<i class="fa-solid fa-school"></i> 多校联盟', link: '/school' },
-      { text: '<i class="fa-solid fa-info-circle"></i> 关于', link: '/about' },
-      { text: '<i class="fa-solid fa-link"></i> 友情链接', link: '/friendLinks' },
-      { text: '<i class="fa-solid fa-clipboard-list"></i> 贡献指南', link: '/contributing' },
+      
     ],
     // 侧边栏配置
     sidebar: generateSidebar({
