@@ -116,7 +116,13 @@ npm run docs:build
 
 ## 🌟 Stars 历史图表
 
-[![Star History Chart](https://api.star-history.com/svg?repos=CN-E-Learning/CN-e-learning&type=Date)](https://www.star-history.com/#CN-E-Learning/CN-e-learning&Date)
+<a href="https://www.star-history.com/#CN-E-Learning/CN-e-learning&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=CN-E-Learning/CN-e-learning&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=CN-E-Learning/CN-e-learning&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=CN-E-Learning/CN-e-learning&type=date&legend=top-left" />
+ </picture>
+</a>
 
 <div align="center">
 
@@ -127,4 +133,4 @@ npm run docs:build
 ## 🔗 友情链接
 - <image src="https://forum.smart-teach.cn/assets/favicon-v4ksoaxf.png" height="18"/> [**SmartTeachCN**](https://forum.smart-teach.cn/) - 智教联盟致力于为教学辅助类应用提供全方面扶持与帮助。
 - <image src="https://avatars.githubusercontent.com/u/184760810" height="18"/> **[Awesome-Iwb](https://github.com/awesome-iwb/awesome-iwb)** - ✨ 全网最全的 教学辅助软件/一体机软件 推荐清单
-- <image src="https://nav.jursin.top/acs.png" height="18"/> [**Awesome-Class-Softwares**](https://github.com/Jursin/Awesome-Class-Softwares) - 🌟 适用于班级一体机的优质软件合集
+- <image src="https://acs.jursin.top/icon/ACS.png" height="18"/> [**Awesome-Class-Softwares**](https://github.com/Jursin/Awesome-Class-Softwares) - 🌟 适用于班级一体机的优质软件合集
