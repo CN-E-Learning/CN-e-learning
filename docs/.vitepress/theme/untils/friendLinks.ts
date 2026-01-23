@@ -24,4 +24,10 @@ export const friendLinks: FriendLink[] = [
     description: "适用于班级一体机的优质软件合集🌟",
     url: "https://github.com/Jursin/Awesome-Class-Softwares",
   },
+  {
+    icon: "https://avatars.githubusercontent.com/u/211526759",
+    title: "Jackie's Blog",
+    description: "这里是 Jackie 的个人博客，一名热爱技术的中国学生。专注分享区块链、智能合约、以太坊、CI/CD、开源项目以及 IT 基础设施的深度解析与实践笔记。",
+    url: "https://jackie.openenet.cn/",
+  },
 ];

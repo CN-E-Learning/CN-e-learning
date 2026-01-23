@@ -128,3 +128,4 @@ npm run docs:build
 - <image src="https://forum.smart-teach.cn/assets/favicon-v4ksoaxf.png" height="18"/> [**SmartTeachCN**](https://forum.smart-teach.cn/) - 智教联盟致力于为教学辅助类应用提供全方面扶持与帮助。
 - <image src="https://avatars.githubusercontent.com/u/184760810" height="18"/> **[Awesome-Iwb](https://github.com/awesome-iwb/awesome-iwb)** - ✨ 全网最全的 教学辅助软件/一体机软件 推荐清单
 - <image src="https://nav.jursin.top/acs.png" height="18"/> [**Awesome-Class-Softwares**](https://github.com/Jursin/Awesome-Class-Softwares) - 🌟 适用于班级一体机的优质软件合集
+- <image src="https://avatars.githubusercontent.com/u/211526759" height="18"/> [**Jackie's Blog**](https://jackie.openenet.cn/) - 这里是 Jackie 的个人博客，一名热爱技术的中国学生。专注分享区块链、智能合约、以太坊、CI/CD、开源项目以及 IT 基础设施的深度解析与实践笔记。
