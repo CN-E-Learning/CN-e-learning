@@ -8,6 +8,10 @@
 
 “**多校联盟**”是一个由《电教委员指南》创建的学校大屏信息汇总平台。它主要帮助电教委员快速查看全国各地学校的大屏应用实例，为自身工作提供参考模板和灵感。
 
+::: tip
+我们将CNEL的多校联盟进行了迁移。麻烦已经在github上填写过的同学在[这里](https://smartteachcn.feishu.cn/share/base/form/shrcnap8asfGtGOfAEE8IzQIDkh)重新填写一遍，感谢！
+:::
+
 ## 学校列表
 
 | 地区 | 学校类型 | 学校 |
