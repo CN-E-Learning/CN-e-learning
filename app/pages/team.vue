@@ -150,7 +150,7 @@ const members: Member[] = [
   },
   {
     name: 'Makitold',
-    avatar: '/images/avatar/Makitold.jpg',
+    avatar: '/images/avatar/Makitold.png',
     role: '运营/编委',
     githubName: 'makitold',
     email: 'makitoidyyds@gmail.com',
@@ -158,7 +158,7 @@ const members: Member[] = [
   },
   {
     name: 'Re.',
-    avatar: '/images/avatar/Re..jpg',
+    avatar: '/images/avatar/Re..png',
     role: '编委',
     email: 'DataDiskWin@outlook.com',
   },
@@ -179,21 +179,21 @@ const members: Member[] = [
   },
     {
     name: 'baldi233',
-    avatar: '/images/avatar/baldi233.jpg',
+    avatar: '/images/avatar/baldi233.png',
     role: '编委',
     githubName: 'baldi233',
     email: 'baldi233@163.com'
   },
     {
     name: 'H6森',
-    avatar: '/images/avatar/H6森.jpg',
+    avatar: '/images/avatar/H6森.png',
     role: '编委',
     githubName: 'HexaWoods',
     bilibili: 'https://space.bilibili.com/3546745099258038'
   },
   {
     name: 'aoye',
-    avatar: '/images/avatar/aoye.jpg',
+    avatar: '/images/avatar/aoye.jpeg',
     role: '编委',
     githubName: 'aoye666',
     website: 'suotianyi.xyz',
@@ -213,12 +213,12 @@ const members: Member[] = [
   },
   {
     name: 'KZ',
-    avatar: '/images/avatar/KZ.jpg',
+    avatar: '/images/avatar/KZ.webp',
     role: '编委'
   },
   {
     name: '2,2,3-三甲基戊烷',
-    avatar: '/images/avatar/2,2,3-三甲基戊烷.jpg',
+    avatar: '/images/avatar/2,2,3-三甲基戊烷.png',
     role: '编委'
   },
 ]
