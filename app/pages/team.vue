@@ -217,10 +217,10 @@ const members: Member[] = [
     role: '编委'
   },
   {
-    name: '森晨雾散',
-    avatar: '/images/avatar/森晨雾散.jpg',
+    name: '2,2,3-三甲基戊烷',
+    avatar: '/images/avatar/2,2,3-三甲基戊烷.jpg',
     role: '编委'
-  }
+  },
 ]
 
 useSeoMeta({
