@@ -139,7 +139,7 @@ const members: Member[] = [
     role: '运营/编委',
     email: 'rukaax@rukaax.top',
     githubName: 'rukaax',
-    website: 'blog.rukaax.top'
+    website: 'https://blog.rukaax.top'
   },
   {
     name: '爆料酱',
@@ -155,7 +155,7 @@ const members: Member[] = [
     githubName: 'makitold',
     email: 'makitoidyyds@gmail.com',
     bilibili: 'https://space.bilibili.com/3690988600035392',
-    website: 'makitoid.github.io'
+    website: 'https://makitoid.github.io'
   },
   {
     name: 'Re.',
