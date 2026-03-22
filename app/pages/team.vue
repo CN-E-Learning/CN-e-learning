@@ -73,7 +73,7 @@ const members: Member[] = [
   {
     name: 'Jursin',
     avatar: '/images/avatar/Jursin.jpg',
-    role: '运营',
+    role: '技术',
     githubName: 'Jursin',
     email: 'jursin@126.com',
     bilibili: 'https://space.bilibili.com/1575907920',
@@ -154,7 +154,8 @@ const members: Member[] = [
     role: '运营/编委',
     githubName: 'makitold',
     email: 'makitoidyyds@gmail.com',
-    bilibili: 'https://space.bilibili.com/3690988600035392'
+    bilibili: 'https://space.bilibili.com/3690988600035392',
+    website: 'makitoid.github.io'
   },
   {
     name: 'Re.',
