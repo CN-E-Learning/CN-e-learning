@@ -51,8 +51,8 @@ const members: Member[] = [
     role: '项目创始人',
     githubName: 'Peter267',
     email: 'wujingbo12@qq.com',
-    website: 'https://peter267.github.io',
-    bilibili: 'https://space.bilibili.com/1057113298'
+    bilibili: 'https://space.bilibili.com/1057113298',
+    website: 'https://peter267.github.io'
   },
   {
     name: 'jiangyin14',
@@ -85,6 +85,7 @@ const members: Member[] = [
     role: '设计',
     githubName: 'Zpcin',
     email: 'zpcin@smart-teach.cn',
+    bilibili: 'https://space.bilibili.com/486013677',
     website: 'https://xiapo.top'
   },
   {
@@ -92,7 +93,8 @@ const members: Member[] = [
     avatar: '/images/avatar/Lyang.jpg',
     role: '运营/编委',
     githubName: 'Lyang1273',
-    email: 'lyang1273@smart-teach.cn'
+    email: 'lyang1273@smart-teach.cn',
+    website: 'https://lyang1273.github.io/'
   },
   {
     name: '过客是个铁憨憨',
@@ -107,8 +109,8 @@ const members: Member[] = [
     role: '运营/编委',
     githubName: 'JerryZeng20142',
     email: 'jerryzeng20210142@outlook.com',
-    website: 'https://bonjour.bio/jerryzeng20142',
-    bilibili: 'https://space.bilibili.com/491617784'
+    bilibili: 'https://space.bilibili.com/491617784',
+    website: 'https://bonjour.bio/jerryzeng20142'
   },
   {
     name: '不吃胡萝卜的兔子',
@@ -123,9 +125,9 @@ const members: Member[] = [
     name: 'kajolno',
     avatar: '/images/avatar/kajolno.jpg',
     role: '运营/编委',
+    githubName: 'kajolno',
     email: 'kajolno@qq.com',
-    bilibili: "https://space.bilibili.com/366679570",
-    website: "https://makitoid.github.io"
+    bilibili: 'https://space.bilibili.com/366679570'
   },
   {
     name: '下班快乐',
@@ -137,8 +139,8 @@ const members: Member[] = [
     name: 'RukaaX',
     avatar: '/images/avatar/RukaaX.jpg',
     role: '运营/编委',
-    email: 'rukaax@rukaax.top',
     githubName: 'rukaax',
+    email: 'rukaax@rukaax.top',
     website: 'https://blog.rukaax.top'
   },
   {
@@ -178,14 +180,14 @@ const members: Member[] = [
     githubName: 'ZhouZhou-oO',
     email: '3405333858@qq.com',
   },
-    {
+  {
     name: 'baldi233',
     avatar: '/images/avatar/baldi233.png',
     role: '编委',
     githubName: 'baldi233',
     email: 'baldi233@163.com'
   },
-    {
+  {
     name: 'H6森',
     avatar: '/images/avatar/H6森.png',
     role: '编委',
@@ -197,9 +199,9 @@ const members: Member[] = [
     avatar: '/images/avatar/aoye.jpeg',
     role: '编委',
     githubName: 'aoye666',
-    website: 'suotianyi.xyz',
     email: 'aoye@suotianyi.xyz',
-    bilibili: 'https://space.bilibili.com/1152730836'
+    bilibili: 'https://space.bilibili.com/1152730836',
+    website: 'https://suotianyi.xyz'
   },
   {
     name: '哈吉米',
@@ -220,7 +222,9 @@ const members: Member[] = [
   {
     name: '2,2,3-三甲基戊烷',
     avatar: '/images/avatar/2,2,3-三甲基戊烷.png',
-    role: '编委'
+    role: '编委',
+    githubName: '2-2-3-trimethylpentane',
+    bilibili: 'https://space.bilibili.com/1448716783'
   },
 ]
 
@@ -317,5 +321,11 @@ useSeoMeta({
   transform: translateY(-3px);
   color: var(--color-primary);
   box-shadow: 0 4px 12px rgba(var(--color-primary-rgb), 0.2);
+}
+
+@media (max-width: 768px) {
+  .member-links {
+    gap: var(--spacing-xs);
+  }
 }
 </style>
