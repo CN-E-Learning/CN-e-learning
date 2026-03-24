@@ -9,9 +9,6 @@
           </NuxtLink>
         </div>
         <h1>{{ title }}</h1>
-        <p v-if="description" class="bulletin-description">
-          {{ description }}
-        </p>
         <div class="bulletin-meta">
           <span class="meta-item">
             <Icon name="ph:calendar" size="16" />
@@ -19,6 +16,10 @@
           </span>
           <slot name="meta" />
         </div>
+        <p v-if="description" class="bulletin-description" style="padding-left:
+        14px; border-left: 3px solid var(--color-primary);">
+          {{ description }}
+        </p>
       </div>
 
       <div class="bulletin-content card-static">
@@ -69,7 +70,7 @@ const { title, date, description, backTo } = toRefs(props)
 .bulletin-description {
   color: var(--color-text-secondary);
   font-size: 1.125rem;
-  margin-bottom: var(--spacing-xs);
+  margin: var(--spacing-xs) auto;
 }
 
 .bulletin-meta {
