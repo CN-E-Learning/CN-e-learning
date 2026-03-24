@@ -16,10 +16,10 @@
           </span>
           <slot name="meta" />
         </div>
-        <p v-if="description" class="bulletin-description" style="padding-left:
+        <span v-if="description" class="bulletin-description" style="padding-left:
         14px; border-left: 3px solid var(--color-primary);">
           {{ description }}
-        </p>
+        </span>
       </div>
 
       <div class="bulletin-content card-static">
@@ -70,7 +70,7 @@ const { title, date, description, backTo } = toRefs(props)
 .bulletin-description {
   color: var(--color-text-secondary);
   font-size: 1.125rem;
-  margin: var(--spacing-xs) auto;
+  margin-bottom: var(--spacing-xs);
 }
 
 .bulletin-meta {
@@ -80,6 +80,7 @@ const { title, date, description, backTo } = toRefs(props)
   gap: var(--spacing-md);
   color: var(--color-text-secondary);
   font-size: 0.9rem;
+  margin-bottom: 8px;
 }
 
 .meta-item {
