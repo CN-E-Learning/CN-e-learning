@@ -43,6 +43,13 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'theme-color', content: '#0156db' }
       ],
+      script: [
+        {
+          src: 'https://umami.peter267.dpdns.org/script.js',
+          defer: true,
+          'data-website-id': 'ac648300-d79f-46a2-bc8e-a818cf6e2af2'
+        }
+      ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
       ]
