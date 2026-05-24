@@ -94,7 +94,7 @@ watch(() => useRoute().path, () => {
   align-items: center;
   justify-content: space-between;
   height: var(--header-height);
-  gap: var(--spacing-md);
+  gap: var(--spacing-xs);
 }
 
 .logo {
@@ -118,6 +118,7 @@ watch(() => useRoute().path, () => {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   letter-spacing: 0.02em;
+  font-size: 18px;
 }
 
 .nav-links {
@@ -127,12 +128,6 @@ watch(() => useRoute().path, () => {
 
 .nav-links.desktop {
   display: none;
-}
-
-@media (min-width: 768px) {
-  .nav-links.desktop {
-    display: flex;
-  }
 }
 
 .nav-link {
@@ -194,23 +189,11 @@ watch(() => useRoute().path, () => {
   background-color: var(--color-bg-secondary);
 }
 
-@media (min-width: 768px) {
-  .mobile-menu-btn {
-    display: none;
-  }
-}
-
 .mobile-nav {
   display: flex;
   flex-direction: column;
   padding: var(--spacing-md) 0;
   border-top: 1px solid var(--color-border);
-}
-
-@media (min-width: 768px) {
-  .mobile-nav {
-    display: none;
-  }
 }
 
 .mobile-nav-link {
@@ -243,5 +226,23 @@ watch(() => useRoute().path, () => {
 .mobile-menu-leave-to {
   opacity: 0;
   transform: translateY(-10px);
+}
+
+@media (min-width: 768px) {
+  .nav-links.desktop {
+    display: flex;
+  }
+
+  .mobile-menu-btn {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .logo-text {
+    font-size: 20px;
+  }
 }
 </style>
