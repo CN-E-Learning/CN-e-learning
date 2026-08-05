@@ -6,7 +6,7 @@
           <h1 class="hero-title">电教委员指南</h1>
           <p class="hero-subtitle">CN E Learning - 做一名优秀的电教委员</p>
           <div class="hero-actions">
-            <a  href="https://smartteachcn.yuque.com/zpgkmv/cnel"
+            <a href="https://smartteachcn.yuque.com/zpgkmv/cnel"
             target="_blank" rel="noopener" class="btn">
               <Icon name="mdi:book-open-outline" size="20" />
               开始阅读
@@ -61,14 +61,12 @@
             <Icon name="ph:buildings" size="32" />
             多校联盟
           </h2>
-          <div class="card-static">
+          <div class="card">
             <ul class="link-list">
               <li>
-                <Icon name="ph:link" size="20" />
                 <a href="https://smartteachcn.feishu.cn/app/NWZnbEs9paQMmVsdOLFcrJF8n6b?pageId=pge9I1OesafFHSka" target="_blank" rel="noopener">联盟展示页</a>：查看当前已加入的成员学校。
               </li>
               <li>
-                <Icon name="ph:link" size="20" />
                 <a href="https://smartteachcn.feishu.cn/share/base/form/shrcnap8asfGtGOfAEE8IzQIDkh" target="_blank" rel="noopener">数据提交</a>：提交学校信息申请加入联盟。
               </li>
             </ul>
@@ -91,7 +89,6 @@ useSeoMeta({
 </script>
 
 <style scoped>
-/* 背景装饰光晕 */
 .home::before {
   content: '';
   position: absolute;
@@ -112,12 +109,6 @@ useSeoMeta({
   z-index: 0;
 }
 
-@media (max-width: 768px) {
-  .home::before {
-    top: calc(-1 * var(--header-height));
-  }
-}
-
 .hero {
   text-align: center;
   position: relative;
@@ -131,26 +122,12 @@ useSeoMeta({
   z-index: 1;
 }
 
-@keyframes pulse-badge {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.7; }
-}
-
 .hero-title {
   font-size: 4rem;
   font-weight: 800;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--color-primary);
   letter-spacing: -0.03em;
   margin-bottom: var(--spacing-md);
-}
-
-@media (min-width: 768px) {
-  .hero-title {
-    font-size: 4rem;
-  }
 }
 
 .hero-subtitle {
@@ -166,35 +143,26 @@ useSeoMeta({
   gap: var(--spacing-md);
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.content-section {
-  padding: var(--spacing-xl) 0;
+  padding-bottom: var(--spacing-md);
 }
 
 .alert {
   background: rgba(var(--color-primary-rgb), 0.15);
-  padding: 20px 24px;
+  padding: var(--spacing-sm) var(--spacing-md);
   border-radius: var(--radius-lg);
-  margin: 20px 0;
+  margin: var(--spacing-sm) 0;
   position: relative;
   overflow: hidden;
-  transition: all 0.3s ease;
   border: 1px solid rgba(var(--color-primary-rgb), 0.2);
-}
-
-.alert:hover {
-  box-shadow: var(--shadow-xl);
-  transform: translateY(-2px);
 }
 
 .alert-title {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: var(--spacing-xs);
   font-weight: 600;
   color: var(--color-primary);
-  margin-bottom: 8px;
+  margin-bottom: var(--spacing-xs);
 }
 
 .alert-content {
@@ -204,24 +172,24 @@ useSeoMeta({
 
 .feedback-center,
 .multi-union {
-  margin: 40px 0;
+  margin: var(--spacing-lg) 0;
 }
 
 .section-title {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: var(--spacing-sm);
+  color: var(--color-text);
   font-size: 1.875rem;
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: var(--spacing-sm);
   letter-spacing: -0.02em;
-  color: var(--color-text);
 }
 
 .section-note {
   font-size: 1rem;
   color: var(--color-text-secondary);
-  margin: 0 0 24px;
+  margin: 0 0 var(--spacing-md);
 }
 
 table {
@@ -230,9 +198,9 @@ table {
   background: var(--color-card-bg);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-lg);
   border: 1px solid var(--color-border);
-  margin: 20px 0;
+  margin: var(--spacing-sm) 0;
 }
 
 thead {
@@ -240,7 +208,7 @@ thead {
 }
 
 th {
-  padding: 16px 24px;
+  padding: var(--spacing-sm) var(--spacing-md);
   text-align: left;
   font-weight: 600;
   color: var(--color-text);
@@ -248,13 +216,13 @@ th {
 }
 
 td {
-  padding: 16px 24px;
+  padding: var(--spacing-sm) var(--spacing-md);
   border-bottom: 1px solid var(--color-border);
   color: var(--color-text-secondary);
 }
 
 tbody tr {
-  transition: all 0.3s ease;
+  transition: background-color var(--transition);
 }
 
 tbody tr:hover {
@@ -268,34 +236,27 @@ tbody tr:last-child td {
 table a {
   color: var(--color-primary);
   font-weight: 600;
-  transition: color 0.3s ease;
+  transition: color var(--transition);
 }
 
 table a:hover {
-  color: var(--color-primary-light);
+  color: var(--color-primary-hover);
 }
 
 .link-list {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  padding: 0;
-  margin: 0;
+  gap: var(--spacing-sm);
 }
 
 .link-list li {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
-  padding: 12px;
+  padding: var(--spacing-sm);
   border-radius: var(--radius-md);
+  color: var(--color-text-secondary);
   background: var(--color-bg-secondary);
-  transition: all 0.3s ease;
-}
-
-.link-list li:hover {
-  transform: translateX(4px);
 }
 
 .link-list svg {
@@ -308,11 +269,11 @@ table a:hover {
 .link-list a {
   color: var(--color-primary);
   font-weight: 600;
-  transition: color 0.3s ease;
+  transition: color var(--transition);
 }
 
 .link-list a:hover {
-  color: var(--color-primary-light);
+  color: var(--color-primary-hover);
   text-decoration: underline;
 }
 </style>

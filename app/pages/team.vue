@@ -1,12 +1,10 @@
 <template>
   <div class="team">
     <div class="container">
-      <div class="page-header">
-        <h1>团队</h1>
-      </div>
+      <PageHeader title="团队" />
 
-      <div class="grid grid-3">
-        <div v-for="member in members" :key="member.name" class="card-static member-card">
+      <div class="member-grid">
+        <div v-for="member in members" :key="member.name" class="card member-card">
           <img :src="member.avatar" :alt="member.name" class="member-avatar" />
           <div class="member-info">
             <h3>{{ member.name }}</h3>
@@ -239,15 +237,16 @@ useSeoMeta({
   min-height: 60vh;
 }
 
-.page-header {
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto var(--spacing-2xl);
+.member-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
 }
 
-.page-header h1 {
-  margin-bottom: var(--spacing-sm);
-  letter-spacing: -0.03em;
+@media (min-width: 768px) {
+  .member-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .member-card {
@@ -267,11 +266,11 @@ useSeoMeta({
   object-fit: cover;
   flex-shrink: 0;
   align-self: center;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform var(--transition), box-shadow var(--transition);
+  box-shadow: var(--shadow-sm);
 }
 
-.member-card:hover .member-avatar {
+.member-avatar:hover {
   transform: scale(1.08);
   box-shadow: 0 8px 20px rgba(var(--color-primary-rgb), 0.2);
 }
@@ -286,11 +285,7 @@ useSeoMeta({
 .member-card h3 {
   font-size: 1.25rem;
   margin-bottom: 0;
-  transition: color 0.3s ease;
-}
-
-.member-card:hover h3 {
-  color: var(--color-primary);
+  color: var(--color-text);
 }
 
 .member-role {
@@ -314,18 +309,11 @@ useSeoMeta({
   border-radius: var(--radius-md);
   color: var(--color-text-secondary);
   background: var(--color-bg-secondary);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition), box-shadow var(--transition);
 }
 
 .member-links a:hover {
-  transform: translateY(-3px);
   color: var(--color-primary);
   box-shadow: 0 4px 12px rgba(var(--color-primary-rgb), 0.2);
-}
-
-@media (max-width: 768px) {
-  .member-links {
-    gap: var(--spacing-xs);
-  }
 }
 </style>

@@ -1,18 +1,21 @@
 :root {
   --color-primary: #0156db;
-  --color-primary-dark: #1d7acc;
-  --color-primary-light: #4daef8;
-  --color-primary-rgb: 36, 149, 247;
-  
+  --color-primary-hover: #1d7acc;
+  --color-primary-rgb: 1, 86, 219;
+
   --color-bg: #f8fafc;
   --color-bg-secondary: #f1f5f9;
   --color-bg-footer: #f1f5f9;
   --color-text: #0f172a;
   --color-text-secondary: #64748b;
   --color-border: #e2e8f0;
+  --color-border-strong: #334155;
   --color-card-bg: #ffffff;
   --color-card-hover: #ffffff;
-  
+
+  --header-bg: rgba(248, 250, 252, 0.8);
+  --header-border: rgba(0, 0, 0, 0.05);
+
   --max-width: 1440px;
   --header-height: 64px;
   --spacing-xs: 0.5rem;
@@ -25,6 +28,9 @@
   --radius-md: 0.75rem;
   --radius-lg: 1rem;
 
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  --shadow-sm: 0 4px 12px rgb(0 0 0 / 0.1);
   --shadow-lg: 0 10px 25px -5px rgb(0 0 0 / 0.08), 0 8px 10px -6px rgb(0 0 0 / 0.06);
   --shadow-xl: 0 20px 40px -10px rgb(0 0 0 / 0.1), 0 8px 16px -8px rgb(0 0 0 / 0.06);
 }
@@ -38,6 +44,9 @@
   --color-border: #1e293b;
   --color-card-bg: #1e293b;
   --color-card-hover: #263348;
+
+  --header-bg: rgba(15, 23, 42, 0.8);
+  --header-border: rgba(255, 255, 255, 0.05);
 
   --shadow-lg: 0 10px 25px -5px rgb(0 0 0 / 0.5), 0 8px 10px -6px rgb(0 0 0 / 0.4);
   --shadow-xl: 0 20px 40px -10px rgb(0 0 0 / 0.6), 0 8px 16px -8px rgb(0 0 0 / 0.4);
@@ -84,8 +93,16 @@ a {
   transition: color 0.2s ease;
 }
 
-a:hover {
-  color: var(--color-primary);
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
 }
 
 .container {
@@ -123,22 +140,14 @@ h3 {
   h1 {
     font-size: 2rem;
   }
-  
+
   h2 {
     font-size: 1.75rem;
   }
-  
+
   h3 {
     font-size: 1.25rem;
   }
-}
-
-button {
-  font-family: inherit;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn {
@@ -150,14 +159,12 @@ button {
   font-weight: 500;
   background-color: var(--color-primary);
   color: white;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition), box-shadow var(--transition), transform var(--transition);
 }
 
 .btn:hover {
-  background-color: var(--color-primary-dark);
-  transform: translateY(-2px);
+  background-color: var(--color-primary-hover);
   box-shadow: 0 4px 12px rgba(var(--color-primary-rgb), 0.3);
-  color: white;
 }
 
 .btn:active {
@@ -172,21 +179,18 @@ button {
 
 .btn-ghost:hover {
   background-color: var(--color-bg-secondary);
-  border-color: var(--color-primary);
-  color: var(--color-text);
   box-shadow: none;
 }
 
 .dark .btn-ghost {
-  border-color: #334155;
+  border-color: var(--color-border-strong);
 }
 
 .dark .btn-ghost:hover {
   background-color: var(--color-card-hover);
-  border-color: var(--color-primary);
 }
 
-.card-static {
+.card {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-sm);
@@ -194,21 +198,21 @@ button {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   padding: var(--spacing-lg);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--transition);
 }
 
-.card-static:hover {
-  box-shadow: var(--shadow-lg);
-  border-color: rgba(var(--color-primary-rgb), 0.2);
+.icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  background-color: transparent;
+  color: var(--color-text);
+  transition: background-color var(--transition);
 }
 
-.grid {
-  display: grid;
-  gap: var(--spacing-lg);
-}
-
-@media (min-width: 768px) {
-  .grid-3 {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.icon-btn:hover {
+  background-color: var(--color-bg-secondary);
 }

@@ -2,25 +2,22 @@
   "name": "cnel-website",
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
     "dev": "nuxt dev --host",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/icon": "^2.2.1",
-    "@nuxtjs/color-mode": "^4.0.0",
-    "@nuxtjs/sitemap": "^8.0.12",
-    "nuxt": "^4.4.2",
-    "vue": "^3.5.32"
+    "@nuxt/icon": "^2.4.1",
+    "@nuxtjs/color-mode": "^4.0.1",
+    "@nuxtjs/sitemap": "^8.3.3",
+    "nuxt": "^4.5.1",
+    "vue": "^3.5.40"
   },
   "devDependencies": {
     "@iconify-json/mdi": "^1.2.3",
     "@iconify-json/ph": "^1.2.2",
     "@iconify-json/ri": "^1.2.10",
-    "@iconify-json/tabler": "^1.2.33",
-    "@iconify-json/twemoji": "^1.2.5",
-    "@types/node": "^25.6.0"
+    "@types/node": "^26.1.2"
   }
 }

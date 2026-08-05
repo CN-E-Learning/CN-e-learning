@@ -8,7 +8,7 @@
         </NuxtLink>
 
         <!-- 桌面端导航 -->
-        <div class="nav-links desktop">
+        <div class="nav-links">
           <NuxtLink
             v-for="item in navItems"
             :key="item.path"
@@ -22,11 +22,11 @@
 
         <!-- 操作按钮 -->
         <div class="nav-actions">
-          <a href="https://github.com/CN-E-Learning" target="_blank" rel="noopener" class="nav-action-btn">
+          <a href="https://github.com/CN-E-Learning" target="_blank" rel="noopener" class="icon-btn">
             <Icon name="mdi:github" size="24" />
           </a>
           <ThemeToggle />
-          <button class="mobile-menu-btn" @click="toggleMobileMenu">
+          <button class="icon-btn mobile-menu-btn" @click="toggleMobileMenu">
             <Icon :name="mobileMenuOpen ? 'ph:x' : 'ph:list'" size="24" />
           </button>
         </div>
@@ -77,16 +77,11 @@ watch(() => useRoute().path, () => {
   left: 0;
   right: 0;
   z-index: 100;
-  background: rgba(248, 250, 252, 0.8);
+  background: var(--header-bg);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.dark .header {
-  background: rgba(15, 23, 42, 0.8);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid var(--header-border);
+  transition: background-color var(--transition), border-color var(--transition);
 }
 
 .nav {
@@ -103,42 +98,29 @@ watch(() => useRoute().path, () => {
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--color-text);
-  text-decoration: none;
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.logo:hover {
-  transform: scale(1.03);
-  color: var(--color-text);
+  transition: transform var(--transition);
 }
 
 .logo-text {
-  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--color-primary);
   letter-spacing: 0.02em;
   font-size: 18px;
 }
 
 .nav-links {
-  display: flex;
-  gap: var(--spacing-sm);
-}
-
-.nav-links.desktop {
   display: none;
+  gap: var(--spacing-sm);
 }
 
 .nav-link {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-xs) var(--spacing-sm);
   font-weight: 500;
   color: var(--color-text-secondary);
   border-radius: var(--radius-md);
-  transition: all 0.2s ease;
+  transition: color 0.2s ease, background-color 0.2s ease;
 }
 
 .nav-link:hover {
@@ -154,39 +136,7 @@ watch(() => useRoute().path, () => {
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-}
-
-.nav-action-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  color: var(--color-text);
-  background-color: transparent;
-  border-radius: var(--radius-md);
-  transition: all 0.3s ease;
-}
-
-.nav-action-btn:hover {
-  background-color: var(--color-bg-secondary);
-}
-
-.mobile-menu-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  color: var(--color-text);
-  background-color: transparent;
-  border-radius: var(--radius-md);
-  transition: all 0.3s ease;
-}
-
-.mobile-menu-btn:hover {
-  background-color: var(--color-bg-secondary);
+  gap: var(--spacing-xs);
 }
 
 .mobile-nav {
@@ -204,7 +154,7 @@ watch(() => useRoute().path, () => {
   font-weight: 500;
   color: var(--color-text-secondary);
   border-radius: var(--radius-md);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition), background-color var(--transition);
 }
 
 .mobile-nav-link:hover {
@@ -219,7 +169,7 @@ watch(() => useRoute().path, () => {
 
 .mobile-menu-enter-active,
 .mobile-menu-leave-active {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity var(--transition), transform var(--transition);
 }
 
 .mobile-menu-enter-from,
@@ -229,7 +179,7 @@ watch(() => useRoute().path, () => {
 }
 
 @media (min-width: 768px) {
-  .nav-links.desktop {
+  .nav-links {
     display: flex;
   }
 

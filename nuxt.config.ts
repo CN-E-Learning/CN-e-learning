@@ -12,6 +12,14 @@ export default defineNuxtConfig({
     '@nuxtjs/sitemap'
   ],
 
+  // 图标配置
+  icon: {
+    clientBundle: {
+      scan: true,
+      sizeLimitKb: 512
+    }
+  },
+
   // 颜色模式配置
   colorMode: {
     preference: 'system',
@@ -25,6 +33,10 @@ export default defineNuxtConfig({
   site: {
     url: 'https://cnel.smart-teach.cn/',
     name: 'CNEL'
+  },
+
+  sitemap: {
+    zeroRuntime: true
   },
 
   // CSS 样式

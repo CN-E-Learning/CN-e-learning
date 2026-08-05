@@ -1,16 +1,13 @@
 <template>
   <div class="bulletin">
     <div class="container">
-      <div class="page-header">
-        <h1>公告</h1>
-        <p>了解团队最新动态与计划</p>
-      </div>
+      <PageHeader title="公告" subtitle="了解团队最新动态与计划" />
 
       <div class="bulletin-list">
         <div
-          v-for="item in bulletins"
+          v-for="item in bulletinsData"
           :key="item.slug"
-          class="card-static"
+          class="card"
         >
           <div class="bulletin-card-header">
             <h3>{{ item.title }}</h3>
@@ -38,8 +35,6 @@
 <script setup lang="ts">
 import bulletinsData from '~/data/bulletins.json'
 
-const bulletins = bulletinsData
-
 useSeoMeta({
   title: '公告 | CNEL',
   description: '了解团队最新动态与计划'
@@ -49,21 +44,6 @@ useSeoMeta({
 <style scoped>
 .bulletin {
   min-height: 60vh;
-}
-
-.page-header {
-  text-align: center;
-  max-width: 640px;
-  margin: 0 auto var(--spacing-2xl);
-}
-
-.page-header h1 {
-  letter-spacing: -0.03em;
-}
-
-.page-header p {
-  color: var(--color-text-secondary);
-  font-size: 1.125rem;
 }
 
 .bulletin-list {
@@ -76,14 +56,7 @@ useSeoMeta({
   display: flex;
   flex-direction: column;
   gap: var(--spacing-xs);
-}
-
-.bulletin-card-header h3 {
-  transition: color 0.3s ease;
-}
-
-.card-static:hover .bulletin-card-header h3 {
-  color: var(--color-primary);
+  color: var(--color-text);
 }
 
 .bulletin-date {
@@ -110,7 +83,6 @@ useSeoMeta({
   align-self: flex-end;
   position: relative;
   padding-bottom: 0.15rem;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .bulletin-readmore::after {
@@ -123,11 +95,7 @@ useSeoMeta({
   background: var(--color-primary);
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.bulletin-readmore:hover {
-  transform: translateX(4px);
+  transition: transform var(--transition);
 }
 
 .bulletin-readmore:hover::after {

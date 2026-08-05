@@ -22,14 +22,11 @@ const currentBulletin = computed(() => {
 
 const htmlContent = ref('')
 
-const normalizeContentPath = (path: string) => (path.endsWith('.html') ? path : `${path}.html`)
-
 const loadBulletinContent = async () => {
   if (!currentBulletin.value) return
 
   try {
-    const contentPath = normalizeContentPath(currentBulletin.value.contentPath)
-    const response = await fetch(contentPath)
+    const response = await fetch(currentBulletin.value.contentPath)
 
     if (!response.ok) {
       throw new Error(`Failed to load bulletin content: ${response.status}`)

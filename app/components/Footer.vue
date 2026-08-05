@@ -3,7 +3,7 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-brand">
-          <div class="logo-text">电教委员指南</div>
+          <div class="footer-brand-title">电教委员指南</div>
           <div class="footer-copyright">
             <p>© 2025-{{ currentYear }} 电教委员指南 | 智教联盟提供技术支持</p>
             <p>
@@ -16,8 +16,8 @@
 
         <div class="footer-links">
           <div class="footer-section">
-            <h4>联系我们</h4>
-            <a href="mailto:cnel@smart-teach.cn"  target="_blank" rel="noopener">
+            <p class="col-title">联系我们</p>
+            <a href="mailto:cnel@smart-teach.cn">
               <Icon name="mdi:email" /> 邮箱
             </a>
             <a href="https://qm.qq.com/q/AqmnvwX8iW" target="_blank" rel="noopener">
@@ -44,10 +44,9 @@
           </div>
 
           <div class="footer-section">
-            <h4>友情链接</h4>
+            <p class="col-title">友情链接</p>
             <a href="https://forum.smart-teach.cn/" target="_blank" rel="noopener">智教联盟论坛</a>
-            <a href="https://github.com/awesome-iwb/awesome-iwb" target="_blank" rel="noopener">Awesome-Iwb</a>
-            <a href="https://acs.jursin.top/" target="_blank" rel="noopener">Awesome-Class-Softwares</a>
+            <a href="https://aiwb.smart-teach.cn/" target="_blank" rel="noopener">Awesome IWB</a>
           </div>
         </div>
       </div>
@@ -61,7 +60,7 @@ const currentYear = new Date().getFullYear()
 
 <style scoped>
 .footer {
-  padding: var(--spacing-xl) 0 var(--spacing-lg);
+  padding: var(--spacing-lg) 0;
   border-top: 1px solid var(--color-border);
   background-color: var(--color-bg-footer);
   position: relative;
@@ -84,13 +83,10 @@ const currentYear = new Date().getFullYear()
   gap: var(--spacing-xs);
 }
 
-.logo-text {
+.footer-brand-title {
   font-size: 1.5rem;
   font-weight: 800;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--color-primary);
   letter-spacing: -0.02em;
 }
 
@@ -124,10 +120,9 @@ const currentYear = new Date().getFullYear()
   gap: var(--spacing-xs);
 }
 
-.footer-section h4 {
-  font-size: 0.8rem;
+.footer-section .col-title {
+  font-size: 1em;
   font-weight: 700;
-  letter-spacing: 0.08em;
   color: var(--color-text);
   margin-bottom: var(--spacing-xs);
 }
@@ -135,15 +130,14 @@ const currentYear = new Date().getFullYear()
 .footer-section a {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: var(--spacing-xs);
   color: var(--color-text-secondary);
   font-size: 0.875rem;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition);
   padding: 0.15rem 0;
 }
 
 .footer-section a:hover {
-  color: var(--color-primary);
-  transform: translateX(4px);
+  color: var(--color-primary-hover);
 }
 </style>

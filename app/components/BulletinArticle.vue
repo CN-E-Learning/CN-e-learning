@@ -16,13 +16,12 @@
           </span>
           <slot name="meta" />
         </div>
-        <span v-if="description" class="bulletin-description" style="padding-left:
-        14px; border-left: 3px solid var(--color-primary);">
+        <span v-if="description" class="bulletin-lead">
           {{ description }}
         </span>
       </div>
 
-      <div class="bulletin-content card-static">
+      <div class="bulletin-content card">
         <slot />
       </div>
     </div>
@@ -55,10 +54,7 @@ const { title, date, description, backTo } = toRefs(props)
 .bulletin-header {
   text-align: center;
   margin-bottom: var(--spacing-xl);
-}
-
-.bulletin-header h1 {
-  letter-spacing: -0.03em;
+  color: var(--color-text);
 }
 
 .bulletin-back {
@@ -67,10 +63,14 @@ const { title, date, description, backTo } = toRefs(props)
   margin-bottom: var(--spacing-sm);
 }
 
-.bulletin-description {
+.bulletin-lead {
+  display: inline-block;
+  text-align: left;
   color: var(--color-text-secondary);
   font-size: 1.125rem;
   margin-bottom: var(--spacing-xs);
+  padding-left: 14px;
+  border-left: 3px solid var(--color-primary);
 }
 
 .bulletin-meta {
@@ -80,7 +80,7 @@ const { title, date, description, backTo } = toRefs(props)
   gap: var(--spacing-md);
   color: var(--color-text-secondary);
   font-size: 0.9rem;
-  margin-bottom: 8px;
+  margin-bottom: var(--spacing-xs);
 }
 
 .meta-item {
@@ -88,8 +88,10 @@ const { title, date, description, backTo } = toRefs(props)
   align-items: center;
   gap: 0.4rem;
   padding: 0.25rem 0.75rem;
-  background: var(--color-bg-secondary);
-  border-radius: 9999px;
+  color: var(--color-text);
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
   font-size: 0.85rem;
 }
 
@@ -97,7 +99,6 @@ const { title, date, description, backTo } = toRefs(props)
   margin-top: var(--spacing-sm);
   margin-bottom: var(--spacing-sm);
   font-size: 1.5rem;
-  letter-spacing: -0.02em;
 }
 
 .bulletin-content :deep(h3) {
@@ -130,9 +131,7 @@ const { title, date, description, backTo } = toRefs(props)
 
 .bulletin-content :deep(a) {
   color: var(--color-primary);
-  transition: all 0.2s ease;
-  overflow-wrap: anywhere;
-  word-break: break-word;
+  transition: color var(--transition);
 }
 
 .bulletin-content :deep(a:hover) {

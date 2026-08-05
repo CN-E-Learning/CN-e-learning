@@ -53,10 +53,7 @@ defineProps({
 .error-content h1 {
   font-size: 8rem;
   font-weight: 900;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--color-primary);
   margin-bottom: var(--spacing-md);
   letter-spacing: -0.05em;
   line-height: 1;

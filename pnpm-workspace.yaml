@@ -1,0 +1,9 @@
+allowBuilds:
+  '@parcel/watcher': true
+  esbuild: true
+minimumReleaseAgeExclude:
+  - '@nuxtjs/sitemap@8.3.3'
+  - nuxt-site-config-kit@4.1.5
+  - nuxt-site-config@4.1.5
+  - nuxtseo-shared@5.3.10
+  - site-config-stack@4.1.5

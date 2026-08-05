@@ -42,4 +42,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .output/public
           publish_branch: static
-          force_orphan: true
