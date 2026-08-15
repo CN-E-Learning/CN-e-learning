@@ -1,4 +1,6 @@
-# CN-e-learning 电教委员指南
+<div align="center">
+  <h1>CN-e-learning 电教委员指南</h1>
+</div>
 
 <div align="center">
   <img src="public/images/og-image.png" alt="banner">
